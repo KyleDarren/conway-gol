@@ -1,3 +1,5 @@
+# Date started: 8/16/2024
+
 import pygame
 import numpy as np
 
@@ -25,7 +27,7 @@ def update_grid(grid):
                     new_grid[r, c] = 0  # Dies
             else:  # Dead
                 if live_neighbors == 3:
-                    new_grid[r, c] = 1  # Becomes alive
+                    new_grid[r, c] = 1  # Born
     return new_grid
 
 def draw_grid(screen, grid):
